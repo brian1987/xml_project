@@ -1,0 +1,17 @@
+<%= form_for(@xml_builder) do |f| %>
+  <% if @xml_builder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@xml_builder.errors.count, "error") %> prohibited this xml_builder from being saved:</h2>
+
+      <ul>
+      <% @xml_builder.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

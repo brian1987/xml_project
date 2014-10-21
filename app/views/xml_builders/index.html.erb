@@ -1,0 +1,23 @@
+<h1>Listing xml_builders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @xml_builders.each do |xml_builder| %>
+      <tr>
+        <td><%= link_to 'Show', xml_builder %></td>
+        <td><%= link_to 'Edit', edit_xml_builder_path(xml_builder) %></td>
+        <td><%= link_to 'Destroy', xml_builder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Xml builder', new_xml_builder_path %>
