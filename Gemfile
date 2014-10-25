@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 #roo gem look it up for XML stuff
 
+#more comments
+
 #alright should probably do some work now
 gem 'builder'
 # Use ActiveModel has_secure_password
