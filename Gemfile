@@ -37,7 +37,7 @@ gem 'builder'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+# Look up capistrano
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
